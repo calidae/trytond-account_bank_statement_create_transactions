@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<tryton>
+    <data>
+        <!-- create_transactions -->
+        <record model="ir.ui.view" id="create_transactions_start_view_form">
+            <field name="model">account.create_transactions.start</field>
+            <field name="type">form</field>
+            <field name="name">create_transactions_start_form</field>
+        </record>
+        <record model="ir.message" id="no_active_ids">
+            <field name="text">No lines have been selected.</field>
+        </record>
+        <record model="ir.message" id="invalid_state">
+            <field name="text">All lines must be in a Confirmed state.</field>
+        </record>
+        <record model="ir.message" id="must_not_be_reconciled">
+            <field name="text">All lines must not be reconciled.</field>
+        </record>
+    </data>
+</tryton>
